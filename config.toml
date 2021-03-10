@@ -1,4 +1,4 @@
-baseURL = "http://localhost:1313/"
+baseURL = ""
 theme = "hugo-theme-learn"
 languageCode = "en-us"
 title = "Wails v2"
