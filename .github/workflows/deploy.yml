@@ -9,7 +9,7 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
-    if: github.repository == 'misitebao/docsv2'
+    if: github.repository == 'misitebao/wails-docsv2'
 
     steps:
       - name: Checkout
