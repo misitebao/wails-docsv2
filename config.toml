@@ -11,13 +11,13 @@ home = [ "HTML" ]
 [Languages]
 [Languages.en]
 title = "Wails"
-weight = 2
+weight = 1
 languageName = "English"
 
 
 [Languages.zh-cn]
 title = "Wails"
-weight = 3
+weight = 2
 languageName = "简体中文"
 
 
