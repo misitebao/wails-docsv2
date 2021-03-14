@@ -15,7 +15,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
         with:
-        ref: master
+          ref: master
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
