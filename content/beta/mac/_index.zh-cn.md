@@ -4,42 +4,41 @@ date = 2020-12-29T19:33:11+10:00
 weight = 1
 +++
 
-## Beta Status
+## 测试版状态
 
-The Mac version of v2 is the most complete and it is possible right now to build apps with it. There are some non-critical features missing.
+Mac 版本的 v2 是最完整的版本，现在可以使用它来构建应用程序。缺少一些非关键功能。
 
-### CLI
+### 命令行
 
-|    Command     | Status | Notes                                   |
-|:-------------- |:------:|------------------------------------------
-| init           | ✓      |                                         |
-| build          | ✓      |                                         |
-| doctor         | ✓      |                                         |
-| generate       | ✗      | Typescript generation is kinda broken   |
-| dev            | ✓      |                                         |
-| issue          | ✗      | TBD                                     |
-| update         | ✗      | TBD                                     |
+| 命令     | 状态 | 笔记                                  |
+| :------- | :--: | ------------------------------------- |
+| init     |  ✓   |                                       |
+| build    |  ✓   |                                       |
+| doctor   |  ✓   |                                       |
+| generate |  ✗   | Typescript generation is kinda broken |
+| dev      |  ✓   |                                       |
+| issue    |  ✗   | TBD                                   |
+| update   |  ✗   | TBD                                   |
 
-### Runtime
+### 运行时
 
-|    Feature     |  Go  | Javascript | Notes                      |
-|:-------------- |:----:|:----------:|-----------------------------
-| Menu           | ✓    | ✗          | JS TBD                     |
-| Window         | ✓    | ✓          |                            |
-| Logging        | ✓    | ✓          |                            |
-| Browser        | ✓    | ✓          |                            |
-| Events         | ✓    | ✓          |                            |
-| Tray           | ✓    | ✗          | JS Menu TBD                |
-| System         | ✓    | ✓          |                            |
-| Dialog         | ✓    | ✓          |                            |
+| 特征    | Go  | Javascript | 笔记        |
+| :------ | :-: | :--------: | ----------- |
+| Menu    |  ✓  |     ✗      | JS TBD      |
+| Window  |  ✓  |     ✓      |             |
+| Logging |  ✓  |     ✓      |             |
+| Browser |  ✓  |     ✓      |             |
+| Events  |  ✓  |     ✓      |             |
+| Tray    |  ✓  |     ✗      | JS Menu TBD |
+| System  |  ✓  |     ✓      |             |
+| Dialog  |  ✓  |     ✓      |             |
 
+## MacOS 版本支持
 
-## MacOS Version Support
+测试平台支持的最好方法之一是尝试运行位于`v2/test`中的 Kitchen Sink 应用程序。这是一个全面的测试应用程序，涵盖了 Wails 运行时的所有部分（Go 和 Javascript）。
 
-One of the best way to test platform support is to try running the Kitchen Sink application located in `v2/test`. This is a comprehensive test application covering all parts of the Wails runtime (both Go and Javascript). 
-
-| MacOS Version  | CLI  | Runtime | Notes                                                     |
-|:-------------- |:----:|:-------:|-----------------------------------------------------------|
-| v11.1 beta     | ✓    | ✗       | Menu / Context Menus not implemented in JS                |
-|                |      |         |                                                           |
-|                |      |         |                                                           |
+| MacOS 版本 | 命令行 | 运行时 | 笔记                     |
+| :--------- | :----: | :----: | ------------------------ |
+| v11.1 beta |   ✓    |   ✗    | 在 JS 中没有实现右键菜单 |
+|            |        |        |                          |
+|            |        |        |                          |

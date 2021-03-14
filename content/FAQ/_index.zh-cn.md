@@ -1,11 +1,11 @@
 +++
-title = "FAQ"
+title = "常见问题"
 date = 2020-12-29T19:33:11+10:00
 weight = 1
 +++
 
-## Technical Questions
+## 技术问题
 
-### Why did you not use Go 1.16's asset embedding?
+### 为什么不使用 Go 1.16 的资源嵌入？
 
-The new embed feature in Go is great, but it is not 100% aligned with our use case. The majority of assets we need to embed are assets for the front end. These assets are entirely managed in C, and whilst we could copy them over into C managed code, it is inefficient to do so. Version 1 of Wails does this and there's a significant startup penalty. In v2, we actually create C files for the embedded assets so they can be used directly by the frontend in their raw form.
+Go 中的新嵌入功能很棒，但是并没有 100％与我们的用例保持一致。我们需要嵌入的大多数资产是用于前端的资产。这些资产完全在 C 中管理，尽管我们可以将它们复制到 C 托管代码中，但这样做效率低下。 Wails 的 v1 会执行此操作，并且会产生重大的启动损失。在 v2 中，我们实际上为嵌入式资产创建了 C 文件，因此前端可以原始格式直接使用它们。
