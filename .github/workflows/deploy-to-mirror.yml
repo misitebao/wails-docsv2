@@ -1,4 +1,4 @@
-name: Deploy
+name: Deploy To Mirror | 部署到镜像站点
 
 on:
   push:
@@ -12,21 +12,21 @@ jobs:
     if: github.repository == 'misitebao/wails-docsv2'
 
     steps:
-      - name: Checkout
+      - name: Checkout | 切换分支
         uses: actions/checkout@master
         with:
           ref: master
 
-      - name: Setup Hugo
+      - name: Setup Hugo | 设置Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: "0.76.5"
+          hugo-version: "0.80"
           extended: true
 
-      - name: Build
+      - name: Build | 构建
         run: hugo --minify
 
-      - name: Deploy to Server
+      - name: Deploy to Server | 部署到服务器
         uses: hengkx/ssh-deploy@v1.0.1
         with:
           HOST: ${{ secrets.DEPLOY_HOST }}
