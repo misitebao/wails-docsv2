@@ -20,7 +20,7 @@ jobs:
       - name: Setup Hugo | 设置Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: "0.80"
+          hugo-version: "0.78"
           extended: true
 
       - name: Build | 构建
